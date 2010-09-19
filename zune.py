@@ -5,7 +5,7 @@ python-zune is a python module for accessing Zune user data
 Example Usage:
 zuneCard = ZuneCard('your zune tag here')
 
-Homepage: http://www.goodercode.com
+Homepage: http://github.com/webdevwilson/python-zune
 
 Copyright (c) 2010, Kerry Wilson
 License: MIT
