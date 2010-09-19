@@ -1,0 +1,174 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module zune</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>zune</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/Kerry/Projects/python-zune/zune.py">/Users/Kerry/Projects/python-zune/zune.py</a></font></td></tr></table>
+    <p><tt>python-zune&nbsp;is&nbsp;a&nbsp;python&nbsp;module&nbsp;for&nbsp;accessing&nbsp;Zune&nbsp;user&nbsp;data<br>
+&nbsp;<br>
+Example&nbsp;Usage:<br>
+zuneCard&nbsp;=&nbsp;<a href="#ZuneCard">ZuneCard</a>('your&nbsp;zune&nbsp;tag&nbsp;here')<br>
+&nbsp;<br>
+Homepage:&nbsp;<a href="http://www.goodercode.com">http://www.goodercode.com</a><br>
+&nbsp;<br>
+Copyright&nbsp;(c)&nbsp;2010,&nbsp;Kerry&nbsp;Wilson<br>
+License:&nbsp;MIT</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#fffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="xml.dom.minidom.html">xml.dom.minidom</a><br>
+</td><td width="25%" valign=top><a href="urllib.html">urllib</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="zune.html#ZuneAlbum">ZuneAlbum</a>
+</font></dt><dt><font face="helvetica, arial"><a href="zune.html#ZuneArtist">ZuneArtist</a>
+</font></dt><dt><font face="helvetica, arial"><a href="zune.html#ZuneBadge">ZuneBadge</a>
+</font></dt><dt><font face="helvetica, arial"><a href="zune.html#ZuneCard">ZuneCard</a>
+</font></dt><dt><font face="helvetica, arial"><a href="zune.html#ZuneTrack">ZuneTrack</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ZuneAlbum">class <strong>ZuneAlbum</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;an&nbsp;album,&nbsp;internal&nbsp;instantiation&nbsp;only<br>
+&nbsp;<br>
+Properties:<br>
+-&nbsp;id<br>
+-&nbsp;label<br>
+-&nbsp;releaseTime<br>
+-&nbsp;url<br>
+-&nbsp;albumCoverSmall<br>
+-&nbsp;albumCoverLarge<br>
+-&nbsp;artist&nbsp;<a href="#ZuneArtist">ZuneArtist</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ZuneAlbum-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ZuneAlbum-__init__"><strong>__init__</strong></a>(self, node)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ZuneArtist">class <strong>ZuneArtist</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;an&nbsp;artist,&nbsp;internal&nbsp;instantiation&nbsp;only<br>
+&nbsp;<br>
+Properties:<br>
+-&nbsp;id<br>
+-&nbsp;label<br>
+-&nbsp;url<br>
+-&nbsp;artistImageLarge&nbsp;(not&nbsp;available&nbsp;in&nbsp;badge&nbsp;context)<br>
+-&nbsp;artistImageSmall&nbsp;(not&nbsp;available&nbsp;in&nbsp;badge&nbsp;context)<br>
+-&nbsp;totalPlays&nbsp;(mostPlayed&nbsp;context&nbsp;only)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ZuneArtist-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ZuneArtist-__init__"><strong>__init__</strong></a>(self, node)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ZuneBadge">class <strong>ZuneBadge</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;a&nbsp;zune&nbsp;badge,&nbsp;internal&nbsp;instantiation&nbsp;only<br>
+&nbsp;<br>
+Properties:<br>
+-&nbsp;id<br>
+-&nbsp;label<br>
+-&nbsp;description<br>
+-&nbsp;type<br>
+-&nbsp;badgeImageSmall<br>
+-&nbsp;badgeImageLarge<br>
+-&nbsp;album&nbsp;<a href="#ZuneAlbum">ZuneAlbum</a><br>
+-&nbsp;artist&nbsp;<a href="#ZuneArtist">ZuneArtist</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ZuneBadge-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ZuneBadge-__init__"><strong>__init__</strong></a>(self, node)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ZuneCard">class <strong>ZuneCard</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Contains&nbsp;user&nbsp;play&nbsp;data<br>
+&nbsp;<br>
+Example&nbsp;Usage:<br>
+<a href="#ZuneCard">ZuneCard</a>('your&nbsp;zune&nbsp;tag&nbsp;here')<br>
+&nbsp;<br>
+Properties:<br>
+-&nbsp;id<br>
+-&nbsp;label<br>
+-&nbsp;firstName<br>
+-&nbsp;status<br>
+-&nbsp;location<br>
+-&nbsp;name<br>
+-&nbsp;location<br>
+-&nbsp;bio<br>
+-&nbsp;totalPlays<br>
+-&nbsp;userId<br>
+-&nbsp;tileBig<br>
+-&nbsp;tileSmall<br>
+-&nbsp;backgroundLarge<br>
+-&nbsp;backgroundSmall<br>
+-&nbsp;badges&nbsp;<a href="#ZuneBadge">ZuneBadge</a>[]<br>
+-&nbsp;following&nbsp;<a href="#ZuneArtist">ZuneArtist</a>[]<br>
+-&nbsp;favorites&nbsp;<a href="#ZuneTrack">ZuneTrack</a>[]<br>
+-&nbsp;recentSpins&nbsp;<a href="#ZuneTrack">ZuneTrack</a>[]<br>
+-&nbsp;mostPlayed&nbsp;<a href="#ZuneArtist">ZuneArtist</a>[]<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ZuneCard-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ZuneCard-__init__"><strong>__init__</strong></a>(self, tag)</dt></dl>
+
+<dl><dt><a name="ZuneCard-refresh"><strong>refresh</strong></a>(self)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ZuneTrack">class <strong>ZuneTrack</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;a&nbsp;song,&nbsp;internal&nbsp;instantiation&nbsp;only<br>
+&nbsp;<br>
+Properties:<br>
+-&nbsp;id<br>
+-&nbsp;label<br>
+-&nbsp;genre<br>
+-&nbsp;album&nbsp;<a href="#ZuneAlbum">ZuneAlbum</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ZuneTrack-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ZuneTrack-__init__"><strong>__init__</strong></a>(self, node)</dt></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
